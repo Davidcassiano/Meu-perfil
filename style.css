@@ -85,3 +85,43 @@ footer p {
     border-top: 1px solid #333;
     padding-top: 15px;
 }
+body { 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Gradiente maior para permitir o movimento */
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #442500, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite; /* Ativa a animação */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+/* Configuração da animação do fundo */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Adicionando uma pulsação leve na borda do card para combinar */
+.container { 
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px 25px;
+    background: rgba(18, 18, 18, 0.95); /* Leve transparência para ver o fundo */
+    border-radius: 20px;
+    border: 2px solid #ff8c00;
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
