@@ -1,8 +1,9 @@
 body { 
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white;
+    /* Fundo preto profundo com um leve toque de cinza escuro */
+    background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,26 +14,39 @@ body {
     text-align: center;
     width: 90%;
     max-width: 400px;
-    padding: 20px; 
+    padding: 30px 25px;
+    /* Card com borda laranja neon sutil */
+    background: #121212;
+    border-radius: 20px;
+    border: 2px solid #ff8c00;
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.15);
 }
 
 .profile-img { 
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    border: 4px solid #4ecca3;
+    /* Borda Laranja Forte */
+    border: 4px solid #ff8c00;
     margin-bottom: 15px; 
+    object-fit: cover;
+    /* Brilho laranja intenso na foto */
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
 }
 
 h1 { 
     margin: 10px 0;
     font-size: 1.8rem;
+    color: #ff8c00; /* Título laranja para destaque total */
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .subtitle { 
-    color: #4ecca3;
+    color: #cccccc;
     margin-bottom: 30px;
     font-weight: 300; 
+    font-size: 0.85rem;
 }
 
 .links { 
@@ -42,23 +56,32 @@ h1 {
 }
 
 .link-card { 
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    background: #1a1a1a;
+    padding: 16px;
     text-decoration: none;
-    color: white;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ff8c00; /* Texto laranja nos botões */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 140, 0, 0.3);
     transition: all 0.3s ease; 
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .link-card:hover { 
-    background: #4ecca3;
-    color: #1a1a2e;
-    transform: translateY(-3px); 
+    /* Inverte as cores no hover: fundo laranja e texto preto */
+    background: #ff8c00;
+    color: #000000;
+    transform: translateX(10px); /* Efeito de deslizar para o lado */
+    box-shadow: -5px 5px 0px #ffffff; /* Sombra branca sólida estilo retrô */
 }
 
 footer { 
     margin-top: 40px;
-    font-size: 0.8rem;
-    color: #999; 
+    font-size: 0.75rem;
+    color: #666666;
+}
+
+footer p {
+    border-top: 1px solid #333;
+    padding-top: 15px;
 }
